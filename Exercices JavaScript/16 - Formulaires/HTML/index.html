@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <legend>
+            <h1>Vos coordonnées :</h1>
+        </legend>
+        <p>*Ces zones sont obligatoires pour envoyer le formulaire</p>
+        <div class="champ">
+            <label for="societe">Société :</label>
+            <input type="text" name="societe" id="societe" required>
+            <div class="requis">*</div>
+        </div>
+        <div class="champ">
+            <label for="personne">Personne à contacter :</label>
+            <input type="text" name="personne" id="personne" required>
+            <div class="requis">*</div>
+        </div>
+        <div class="champ">
+            <label for="adresse">Adresse de l'entreprise :</label>
+            <textarea name="adresse" id="adresse"></textarea>
+        </div>
+        <div class="champ">
+            <label for="code_postal">Code postal :</label>
+            <input type="text" name="code_postal" id="code_postal" required>
+            <div class="requis">*</div>
+        </div>
+        <div class="champ">
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville" required>
+            <div class="requis">*</div>
+        </div>
+        <div class="champ">
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" required>
+            <div class="requis">*</div>
+        </div>
+        <div class="champ">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" name="telephone" id="telephone">
+        </div>
+        <div class="champ">
+            <div id=gauche>
+                <label for="environnement_technique">Sélectionnez l'environnement technique du projet :</label>
+                <select name="environnement_technique" id="environnement_technique">
+                    <option value="defaut" selected>Choississez</option>
+                    <option value="access">Access</option>
+                    <option value="java">Java</option>
+                    <option value="delphi">Delphi</option>
+                    <option value="windev">Windev</option>
+                    <option value="visual_basic">Visual Basic</option>
+                    <option value="power_builder">Power Builder</option>
+                    <option value="internet">Internet</option>
+                    <option value="intranet">Intranet</option>
+                    <option value="windows_nt">Windows NT</option>
+                    <option value="unix">Unix</option>
+                    <option value="sql_server">SQL Server</option>
+                    <option value="oracle">Oracle</option>
+                    <option value="autres">Autres...</option>
+                </select>
+            </div>
+            <textarea></textarea>
+        </div>
+        <div class="champ" id="boutons">
+            <input type="submit" value="Envoyer" onclick="verif();">
+            <input type="submit" value="Effacer">
+        </div>
+    </form>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
