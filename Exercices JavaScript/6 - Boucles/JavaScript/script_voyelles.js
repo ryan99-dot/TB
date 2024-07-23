@@ -1,9 +1,9 @@
-let mot;
-let voyelles=0;
-mot = prompt("Saisir un mot");
-for (i = 0; i < mot.length; ++i) {
-    if (mot.substring(i, 1) == "a" || "e" || "i" || "o" || "u" || "y") {
-        voyelles += parseInt(1)
+let mot=prompt("Entrez un mot");
+let nbVoyelles = 0;
+let voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
+for (let lettre of mot) {
+    if (voyelles.includes(lettre)) {
+        nbVoyelles ++;
     }
 }
-alert(voyelles);
+alert(nbVoyelles);

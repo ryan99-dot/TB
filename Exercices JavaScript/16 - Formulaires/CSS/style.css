@@ -7,11 +7,15 @@ margin-bottom: 20px;}
 input, select, textarea{margin-left: 10px;
 height: 50%;}
 
-p{color: red;}
+p{color:darkred;}
 
-.requis{color: red;
-margin-left: 50px;
+.requis{
+    color: red;
 }
+
+.requis:not(span){margin-left: 50px;
+}
+
 
 #gauche{display: flex;
     flex-direction: column;
