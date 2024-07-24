@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Total d'une commande</title>
 </head>
+
 <body>
-    <p id="prix"></p>
-    <p id="quantite"></p>
-    <p id="remise"></p>
-    <p id="port"></p>
-    <p id="total"></p>
+    <header>
+        <h1>Evaluation TB</h1>
+        <nav>
+            <ol>
+                <li><a href="../../Evaluation.html">Accueil</a></li>
+                <li><a href="../../Exercice 1 - Calcul du nombre de jeunes, de moyens et de vieux/HTML/index1.html">Calcul
+                        du
+                        nombre de jeunes, de moyens et de vieux</a></li>
+                <li><a href="../../Exercice 2 - Table de multiplication/HTML/index2.html">Table de multiplication</a>
+                </li>
+                <li><a href="../../Exercice 3 - Recherche d'un prénom/HTML/index3.html">Recherche d'un prénom</a></li>
+                <li><a href="#">Total d'une commande</a></li>
+                <li><a href="../../Exercice 5 - Projet Jarditou/HTML/index.html">Jarditou (Accueil)</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section>
+        <h2>Enoncé de l'exercice :</h2>
+        <p>A partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le
+            prix à payer PAP, en détaillant la remise REM et le port PORT, sachant que :
+            <br>
+        <ul>
+            <li>TOT = ( PU * QTECOM )</li>
+            <li>la remise est de 5% si TOT est compris entre 100 et 200 € et de 10% au-delà</li>
+            <li>le port est gratuit si le prix des produits ( le total remisé ) est supérieur à 500 €. Dans le cas
+                contraire, le port est de 2%</li>
+            <li>la valeur minimale du port à payer est de 6 €</li>
+        </ul>
+        Testez tous les cas possibles afin de vous assurez que votre script fonctionne.
+        <br>
+        Ci-dessous, un jeu de tests :
+        <ul>
+            <li>Saisir 600 € et quantité = 1 : remise 10% (-60 €) soit 540,00 et frais port = 0; à payer : 540 €</li>
+            <li>Saisir 501 € et quantité = 1 : remise 10% (-50,1 €) soit 450,90 et frais port 2% (de 450,90 €) soit
+                +9,01 €
+                ; à payer : 450,90+9.01 = 459,91 €.</li>
+            <li>Saisir 100 € et quantité = 2 : 200 € donc remise 5% soit 190 € et frais de port 2% soit 3,8 € mini 6 €;
+                à
+                payer : 190+6 = 196 €</li>
+            <li>Saisir 3 € et quantité = 1 : remise 0, frais de port 2% soit 0.06 € donc le minimum de 6 € s'applique; à
+                payer : 3+6 = 9 €</li>
+        </ul>
+        </p>
+    </section>
+    <section>
+        <h2>Résolution de l'exercice :</h2>
+        <p id="prix"></p>
+        <p id="quantite"></p>
+        <p id="remise"></p>
+        <p id="port"></p>
+        <p id="total"></p>
+    </section>
     <script src="../JavaScript/script4.js"></script>
 </body>
+
 </html>
