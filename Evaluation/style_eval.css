@@ -1,3 +1,84 @@
-h1{
-    justify-content: center;
+body{
+    background-color:wheat;
+    margin : 0px;
 }
+
+header{
+    background:linear-gradient(lightgreen, wheat);
+    width: 100%;
+    padding-bottom: 80px;
+    font-size: large;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+ol{
+   display:none;
+   position: absolute;
+   margin-top: 20px;
+   padding-left: 0px;
+
+   box-shadow: 10px 5px 5px grey;
+   background-color:azure;
+   border-radius: 10px 10px 10px 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu_exos{
+display: flex;
+flex-direction: column;
+}
+
+ol li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    list-style-position: inside;
+ }
+
+ img{
+    width: 400px;
+    height:auto;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ #images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+ }
+
+ figure{
+    width: 400px;
+    background-color:rgb(183, 233, 183);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px gray;
+ }
+
+ figcaption{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+ }
+
+ a{
+    text-decoration: none;
+    color: black;
+ }
+
+ a:hover{
+    color:darkslateblue;
+ }

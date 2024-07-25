@@ -22,3 +22,16 @@ while (age < 100) {
 };
 document.getElementById("table").innerHTML = tableau.join("<br>")
 document.getElementById("decompte").innerHTML = "Il y a <b>" + jeune + "</b> personnes <span id=\"jeune\">de moins de 20 ans</span>, il y a <b>" + moyen + "</b> personnes <span id=\"moyen\">entre 20 et 40 ans</span> et il y a <b>" + vieux + "</b> personnes <span id=\"vieux\">de plus de 40 ans</span>."
+
+
+let liste_exos = document.getElementById("listexos")
+let menu_exos=document.getElementById("menu_exos")
+
+
+menu_exos.addEventListener("mouseover", function () {
+    liste_exos.style.display = "table-column"
+})
+
+menu_exos.addEventListener("mouseout", function () {
+    liste_exos.style.display = "none"
+})

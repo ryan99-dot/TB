@@ -4,3 +4,20 @@
 h3{
     text-decoration: underline ;
 }
+
+ol{
+    display:none;
+    position: absolute;
+    margin-top: 20px;
+    padding-left: 0px;
+ }
+ 
+ ul{
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ #menu_exos{
+ display: flex;
+ flex-direction: column;
+ }
