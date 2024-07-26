@@ -1,23 +1,101 @@
+html{
+    height: 100%;
+ }
+
+body {
+    background: linear-gradient(wheat, 90%, rgb(212, 210, 210));
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(39, 59, 59);
+ }
+
+
+ 
+ /*En-tête*/
+ header {
+    background: linear-gradient(lightgreen, wheat);
+    width: 100%;
+    padding-bottom: 80px;
+    font-size: large;
+ }
+ 
+ h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 50px;
+    font-family:cursive;
+    color: darkolivegreen;
+ }
+ 
+ 
+ /*Navigation*/
+ ol {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    padding-left: 0px;
+    box-shadow: 10px 5px 5px grey;
+    background-color: azure;
+    border-radius: 10px;
+ }
+ 
+ ul {
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ #menu_exos {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    list-style-position: inside;
+ }
+ 
+ 
+ ol li:hover {
+    background-color: turquoise;
+ }
+ 
+ li:first-child:hover {
+    border-radius: 10px 10px 0px 0px;
+ }
+ 
+ li:last-child:hover {
+    border-radius: 0 0 10px 10px;
+ }
+
+ /*Ancres*/
+a {
+    text-decoration: none;
+    color:rgb(39, 59, 59);
+ }
+ 
+ a:hover {
+    color: darkslateblue;
+ }
+
+ /*Enoncé et exercice*/
+ #enonce{
+    font-style:italic
+ }
+
+#exercice{
+    text-align: center;
+    font-size:large
+}
+
+
+
+
 .chiffre{
     color:seagreen;
 }
 h3{
     text-decoration: underline ;
 }
-
-ol{
-    display:none;
-    position: absolute;
-    margin-top: 20px;
-    padding-left: 0px;
- }
- 
- ul{
-     display: flex;
-     justify-content: space-around;
- }
- 
- #menu_exos{
- display: flex;
- flex-direction: column;
- }
